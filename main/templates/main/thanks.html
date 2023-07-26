@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Thank You | HealthLuk
+{% endblock title %}
+
+{% block content %}
+    <div class="section">
+        <img src="{% static 'img/success.png' %}" alt="Check_mark" />
+        <h1>
+            thank you!
+        </h1>
+        <p>You have successfully joined the HealthLuk&#174; Waitlist. We will contact you soon.
+        <br>
+            <small>
+                Follow our social media pages for more updates: <a href="https://www.facebook.com/healthlukdirectory" target="_blank" rel="noopener noreferrer">Facebook</a> | <a href="https://www.instagram.com/healthluk" target="_blank" rel="noopener noreferrer">Instagram</a> | <a href="https://www.twitter.com/@healthlukdir" target="_blank" rel="noopener noreferrer">Twitter</a>.
+            </small>
+        </p>
+    </div>
+{% endblock content %}

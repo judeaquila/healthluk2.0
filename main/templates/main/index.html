@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  HealthLuk | Your Health Service Navigator
+{% endblock title %}
+
+{% block content %}
+<div class="main">
+  <div>
+    <h1>your <br />health service <br />navigator</h1>
+    <p>
+      HealthLuk&#174; is a comprehensive directory that connects you with a world of healthcare options.
+    </p>
+  </div>
+  <div>
+    <form action="" method="POST">
+      {% csrf_token %}
+      {{ form.email }}
+    </form>
+  </div>
+</div>
+{% endblock content %}
